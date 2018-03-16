@@ -1,5 +1,5 @@
 <launch>
-  <group ns="camera_left">
+  <group ns="stereo/left">
     <node pkg="libuvc_camera" type="camera_node" name="left">
       <!-- Parameters used to find the camera		 -->
       <param name="vendor" value="0x05a3"/>
@@ -33,7 +33,7 @@
     </node>
   </group>
 
-  <group ns="camera_right">
+  <group ns="stereo/right">
     <node pkg="libuvc_camera" type="camera_node" name="right">
       <!-- Parameters used to find the camera    -->
       <param name="vendor" value="0x05a3"/>
